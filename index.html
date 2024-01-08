@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1cb608260b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgba(128, 128, 128, 0.418);
+        }
+
+        .a1 {
+            z-index: 999;
+            background-color: rgb(255, 255, 255);
+            height: 100px;
+            position: sticky;
+            top: 5px;
+        }
+
+        img {
+            position: relative;
+            left: 100px;
+        }
+
+        input {
+            position: relative;
+            left: 200px;
+            top: -43px;
+            border-radius: 30px;
+        }
+
+        button {
+            border: none;
+            background-color: white;
+            position: relative;
+            left: 210px;
+            top: -43px;
+            border-radius: 30px;
+        }
+
+        .imgq1 {
+            cursor: pointer;
+            position: relative;
+            left: -17px;
+            top: 12px;
+        }
+
+        .b1 {
+            text-decoration: none;
+            color: gray;
+            position: relative;
+            left: 300px;
+            padding: 20px;
+            top: -39px;
+        }
+
+        .med {
+            margin-top: 20px;
+            display: inline-block;
+            /* border: 2px solid; */
+            height: 900px;
+            width: 700px;
+            position: relative;
+            left: 316px;
+            top: -5px;
+        }
+
+        .pro {
+            border-radius: 30px;
+            background-color: white;
+            width: 100%;
+            height: 20%;
+        }
+
+        .br {
+            background-color: brown;
+            border: 1px solid;
+            border-radius: 50%;
+            height: 90px;
+            width: 90px;
+            position: relative;
+            left: 20px;
+            top: 10px;
+            background-image: url(https://media.licdn.com/dms/image/D4D03AQFlK9GGOb2Xaw/profile-displayphoto-shrink_100_100/0/1704382977337?e=1709769600&v=beta&t=8zI0Bwupme-W97E-01RjMxZ28IW9OQWBmRlzJWZTEDM);
+            background-size: 100% 100%;
+        }
+
+        .in1 {
+            height: 30px;
+            width: 520px;
+
+            position: relative;
+            left: 135px;
+        }
+
+        .media {
+            display: inline;
+            position: relative;
+            left: -290px;
+            top: 20px;
+        }
+
+        .media2 {
+            display: inline;
+            position: relative;
+            left: -250px;
+            top: 20px;
+        }
+
+        .media3 {
+            display: inline;
+            position: relative;
+            left: -210px;
+            top: 20px;
+        }
+
+        .lsb {
+            border-radius: 20px;
+            /* border: 1px solid; */
+            height: 350px;
+            width: 300px;
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 130px;
+            background-color: white;
+        }
+
+        .rsb {
+            border-radius: 20px;
+            /* border: 1px solid; */
+            height: 480px;
+            width: 300px;
+            display: inline-block;
+            background-color: white;
+            position: relative;
+            left: 325px;
+            top: -1460px;
+
+        }
+
+        .rsb1 {
+            font-size: 20px;
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+
+        .rsbpro {
+            background-image: url(https://media.licdn.com/dms/image/D4E0BAQH-VAoeRaZHVg/company-logo_100_100/0/1682588411670?e=1712188800&v=beta&t=ML844fhyYkd4CV7ydg7TLsBJ89mHGsyYH6dGRLuOVqU);
+            background-size: 100% 100%;
+            border: 1px solid;
+            border-radius: 50px;
+            height: 70px;
+            width: 70px;
+            background-color: aqua;
+            position: relative;
+            left: 10px;
+            top: 20px;
+        }
+
+        .rsbprotxt {
+            position: relative;
+            left: 90px;
+            top: -8%;
+            display: inline-block;
+        }
+
+        .rsbprotxt1 {
+            color: gray;
+            font-size: 15px;
+            position: relative;
+            top: -10%;
+            left: 1px;
+            /* font-size: 0%; */
+        }
+
+        .rsbprotxt2 {
+            position: relative;
+            top: -11%;
+            cursor: pointer;
+            left: 100px;
+            border: 1px solid;
+            padding: 6px;
+            font-size: 19px;
+        }
+
+        .rsbpro1 {
+            background-image: url(https://media.licdn.com/dms/image/D560BAQHTZ2lH8GmS1A/company-logo_100_100/0/1686243185121/bruce_clay_inc__logo?e=1712188800&v=beta&t=PlzzZFGf0IX6-8eIe1-tT3ospZk1vuPks9hPTxtBtlY);
+            background-size: 100% 100%;
+            border: 1px solid;
+            border-radius: 50px;
+            height: 70px;
+            width: 70px;
+            background-color: aqua;
+            position: relative;
+            left: 10px;
+            top: -45px;
+        }
+
+        .rsbpro2 {
+            background-image: url(https://media.licdn.com/dms/image/D4D03AQFY7n3kWlWcHg/profile-displayphoto-shrink_100_100/0/1696333076921?e=1709769600&v=beta&t=JqNkx14jMv_A70hqC57Vw0PZjOJ37Y_xK5O3IcX4TYU);
+            background-size: 100% 100%;
+            border: 1px solid;
+            border-radius: 50px;
+            height: 70px;
+            width: 70px;
+            background-color: aqua;
+            position: relative;
+            left: 10px;
+            top: -100px;
+
+        }
+
+        .rsb2 {
+            color: gray;
+            font-size: 17px;
+            position: relative;
+            left: 1px;
+            top: -170px;
+        }
+
+        .rsbpart2 {
+            /* background-attachment: fixed; */
+            background-image: url(https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png);
+            background-size: 100% 60%;
+            background-repeat: no-repeat;
+            margin-top: 10px;
+            /* border: 1px solid; */
+            height: 600px;
+            width: 300px;
+            display: inline-block;
+            /* float: right; */
+            right: 12px;
+            background-color: white;
+            border-radius: 30px;
+            position: absolute;
+            /* position: sticky; */
+            top: 615px;
+        }
+
+        .asad {
+            float: right;
+            top: 615px;
+            display: inline-block;
+            position: relative;
+            background-color: red;
+            height: 612px;
+            width: 312px;
+            border: 2px solid red;
+        }
+
+        .lsb1 {
+            height: 20%;
+            width: 100%;
+            background-color: aqua;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwI4jdF6VTpTPV_aI974HYVK7adW_aU5J96Q&usqp=CAU);
+            background-size: 100% 100%;
+        }
+
+        .lsb2 {
+            background-image: url(https://media.licdn.com/dms/image/D4D03AQFlK9GGOb2Xaw/profile-displayphoto-shrink_100_100/0/1704382977337?e=1709769600&v=beta&t=8zI0Bwupme-W97E-01RjMxZ28IW9OQWBmRlzJWZTEDM);
+            background-size: 100% 100%;
+            border: 1px solid white;
+            height: 90px;
+            width: 90px;
+            border-radius: 50px;
+            background-color: rgb(214, 21, 21);
+            position: relative;
+            top: -60px;
+            left: 105px;
+        }
+
+        .lsb3 {
+            font-weight: bolder;
+            position: relative;
+            left: 60px;
+            top: -39px;
+        }
+
+        .hr1 {
+            color: gray;
+        }
+
+        .lsb4 {
+            position: relative;
+            left: 10px;
+        }
+
+        .lsb5 {
+            font-size: small;
+            position: relative;
+            left: 10px;
+        }
+
+        .lsb6 {
+            font-size: small;
+            position: relative;
+            left: 20px;
+        }
+
+        .rsbpart2txt {
+            position: relative;
+            top: 370px;
+            left: 8px;
+            font-size: larger;
+        }
+
+        .rsbprotxta1 {
+            position: relative;
+            left: 91px;
+            top: -21%;
+            display: inline-block;
+        }
+
+        .rsbprotxt1a1 {
+            color: gray;
+            font-size: 15px;
+            position: relative;
+            top: -23%;
+            left: 1px;
+        }
+
+        .rsbprotxt23 {
+            position: relative;
+            top: -24%;
+            cursor: pointer;
+            left: 100px;
+            border: 1px solid;
+            padding: 6px;
+            font-size: 19px;
+        }
+
+        .rsbprotxta2 {
+            position: relative;
+            left: 91px;
+            top: -34%;
+            display: inline-block;
+        }
+
+        .rsbprotxt1a2 {
+            color: gray;
+            font-size: 15px;
+            position: relative;
+            top: -36%;
+            left: 1px;
+        }
+
+        .rsbprotxt24 {
+            position: relative;
+            top: -37%;
+            cursor: pointer;
+            left: 100px;
+            border: 1px solid;
+            padding: 6px;
+            font-size: 19px;
+        }
+
+        .post {
+            /* background-image: url(linkedin1.PNG); */
+            /* background-size: 100% 2px; */
+            border-radius: 30px;
+            margin-top: 20px;
+            border: 1px solid;
+            width: 700px;
+            height: 510px;
+        }
+
+        .post1 {
+            position: relative;
+            top: -340px;
+            border-radius: 30px;
+            margin-top: 10px;
+            border: 1px solid;
+            width: 700px;
+            height: 510px;
+        }
+
+        .post2 {
+            position: relative;
+            top: -675px;
+            border-radius: 30px;
+            margin-top: 10px;
+            border: 1px solid;
+            width: 700px;
+            height: 510px;
+        }
+
+        .postpro {
+            background-image: url(https://media.licdn.com/dms/image/D4D03AQFlK9GGOb2Xaw/profile-displayphoto-shrink_100_100/0/1704382977337?e=1709769600&v=beta&t=8zI0Bwupme-W97E-01RjMxZ28IW9OQWBmRlzJWZTEDM);
+            background-size: 100% 100%;
+            height: 90px;
+            width: 90px;
+            border-radius: 50px;
+            background-color: brown;
+            position: relative;
+            top: 15px;
+            left: 10px;
+        }
+
+        .pposttxt {
+            position: relative;
+            /* top: -90px; */
+            display: inline-block;
+        }
+
+        .pb {
+            background-image: url(https://media.licdn.com/dms/image/D4D22AQG54cww3JEaaA/feedshare-shrink_2048_1536/0/1704652349015?e=1707350400&v=beta&t=L7UvFXN0rIyrlEvN2er7SgdgOrZv4RG8Yr9OwTrBvfM);
+            background-size: 100% 100%;
+            background-color: aqua;
+            width: 701px;
+            border-radius: 0px;
+            height: 350px;
+            position: relative;
+            top: -390px;
+        }
+
+        .pb1 {
+            background-image: url(https://media.licdn.com/dms/image/D4D22AQHjX85JiHp7Qg/feedshare-shrink_800/0/1703591373713?e=1707350400&v=beta&t=RyNfZV4DCFLx68SbSo0QRT5rB9QZxNPUQ7MVlop_TKs);
+            background-size: 100% 100%;
+            background-color: aqua;
+            width: 701px;
+            border-radius: 0px;
+            height: 350px;
+            position: relative;
+            top: -730px;
+        }
+
+        .pb2 {
+            background-image: url(https://media.licdn.com/dms/image/D4D22AQHrkgR3UARSpQ/feedshare-shrink_800/0/1704640806991?e=1707350400&v=beta&t=5kHdxgRCDaFkZNpTzlzF6EwpRYEx4IvuN4qNJhw4DsQ);
+            background-size: 100% 100%;
+            background-color: aqua;
+            width: 702px;
+            border-radius: 0px;
+            height: 350px;
+            position: relative;
+            top: -1067px;
+        }
+
+        span {
+            position: relative;
+            left: 150px;
+            top: -60px;
+            font-weight: bold;
+        }
+
+        .like {
+            border-radius: 30px;
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 60px;
+            position: relative;
+            bottom: -280px;
+            background-image: url(linkedin1.PNG);
+            background-size: 100% 100%;
+        }
+
+        .qwer {
+            position: relative;
+            bottom: 129px;
+            
+        }
+        i {
+            color: red;
+            font-size: 30px;
+            position: relative;
+            bottom: 80px;
+            right: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="a1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmNXjpkjz3p-yaePKMxAGdY9VshMz7UP4bZA&usqp=CAU"
+            alt="" height="100px">
+        <input type="text" placeholder="  search">
+        <button><img class="imgq1"
+                src="data:image/png;base64,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"
+                alt="" width="30px" height="30px"></button>
+
+        <a href="" class="b1">HOME</a>
+        <a href="" class="b1">MY NETWORK</a>
+        <a href="" class="b1">JOBS</a>
+        <a href="" class="b1">MESSIGING</a>
+        <a href="" class="b1">NOTIFICATIONS</a>
+
+
+
+
+    </nav>
+
+    <div class="med">
+
+        <div class="pro">
+            <div class="br"></div>
+            <input type="text" class="in1" placeholder="   start a post">
+
+            <div class="media">Media</div>
+            <div class="media2">Event</div>
+            <div class="media3">Write</div>
+
+
+        </div>
+
+        <div class="post">
+            <div class="postpro"></div>
+            <span>Muhammad Nizam-ud-din <br>
+                <br>
+                <pre>  19 hours ago</pre>
+            </span>
+
+            <div class="like"></div>
+        </div>
+        <div class="pb"></div>
+
+
+
+        <!-- <div class="pposttxt"></div> -->
+        <div class="post1">
+            <div class="postpro"></div>
+            <span>Muhammad Nizam-ud-din <br>
+                <br>
+                <pre>  2 weeks ago</pre>
+            </span>
+
+            <div class="like"></div>
+        </div>
+        <div class="pb1"></div>
+        <div class="post2">
+            <div class="postpro"></div>
+            <span>Muhammad Nizam-ud-din <br>
+                <br>
+                <pre>  3 days ago</pre>
+            </span>
+
+            <div class="like"></div>
+        </div>
+        <div class="pb2"></div>
+
+    </div>
+
+    <div class="lsb">
+        <div class="lsb1"></div>
+        <div class="lsb2"></div>
+        <div class="lsb3">Muhammad Nizam-ud-din</div>
+        <hr class="hr1">
+        <div class="lsb4">
+            <pre>Connections
+Grow your network</pre>
+        </div>
+        <hr class="hr1">
+        <div class="lsb5">Access exclusive tools & insights</div>
+        <div class="lsb5">Try Premium for PKR0</div>
+        <hr class="hr1">
+        <div class="lsb6">My Items</div>
+    </div>
+
+    <div class="rsb">
+        <div class="rsb1">Add to your feed</div>
+        <div class="rsbpro"></div>
+        <div class="rsbprotxt">Hadi E-Learning </div>
+        <div class="rsbprotxt1">
+            <pre>           Company•Government
+           Administration</pre>
+        </div>
+        <button class="rsbprotxt2"> + Follow </button>
+
+
+        <div class="rsbpro1"></div>
+        <div class="rsbprotxta1">Bruce Clay </div>
+        <div class="rsbprotxt1a1">
+            <pre>           Company•Government
+           Administration</pre>
+        </div>
+        <button class="rsbprotxt23"> + Follow </button>
+        <div class="rsbpro2"></div>
+        <div class="rsbprotxta2">Nosheen Mirza </div>
+        <div class="rsbprotxt1a2">
+            <pre>           Company•Government
+           Administration</pre>
+        </div>
+        <button class="rsbprotxt24"> + Follow </button>
+
+
+        <div class="rsb2">
+            <pre>   View all recommendations</pre>
+        </div>
+
+
+
+    </div>
+
+    <div class="rsbpart2">
+        <div class="rsbpart2txt">
+            <pre>   About
+
+  Accessibility
+  Help Center   Privacy & Terms 
+  Ad Choices
+  Advertising
+  Business Services 
+  Get the LinkedIn app
+  More
+
+  LinkedIn Corporation © 2024</pre>
+        </div>
+    </div>
+    <i class="fa-solid fa-heart"></i>
+    <!-- <div class="thank1"> -->
+    
+    <pre><h1 class="qwer">                            thank you for visiting my website</h1></pre>
+
+<!-- </div> -->
+</body>
+
+</html>
